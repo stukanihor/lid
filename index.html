@@ -109,20 +109,20 @@ details.numbers .hint{margin-top:8px}
 .cheatdoc h1{font-family:var(--serif);font-size:21px;margin:0 0 4px}
 .cheatdoc .chsub{color:var(--muted);font-size:13px;margin:0 0 16px}
 .cheatdoc h2{font-family:var(--serif);font-size:16px;margin:22px 0 8px;padding-bottom:5px;border-bottom:1px solid var(--line)}
-.chitem{margin:0 0 10px;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.chhead{margin:0 0 4px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
-.chhead b{color:var(--ink)}
-.chq{margin:0;font-size:14.5px;line-height:1.4;font-weight:600}
+.chitem{margin:0 0 12px;padding:16px 17px 17px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.chhead{margin:0 0 12px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.chhead b{color:var(--ink);background:var(--surface-2);border-radius:7px;padding:3px 8px;letter-spacing:.03em}
+.chq{margin:0;font-size:15px;line-height:1.45;font-weight:600}
 .chpics{display:flex;gap:7px;margin:9px 0 0}
 .chpics .chpic{flex:1 1 0;min-width:0;text-align:center}
 .chpics.one .chpic{flex:0 0 auto;max-width:220px}
 .chpics img{width:100%;display:block;border:1px solid var(--line);border-radius:7px;background:#fff}
 .chpics b{display:block;font-size:11px;color:var(--muted);margin-top:3px;font-weight:600}
-.chtr{margin:2px 0 0;font-size:13.5px;color:var(--muted)}
-.chans{margin:5px 0 0;font-size:14.5px;font-weight:600}
+.chtr{margin:5px 0 0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.chans{margin:12px 0 0;font-size:14.5px;line-height:1.4;font-weight:600}
 .chans i{font-style:normal;color:var(--good)}
-.chtra{margin:0;font-size:13.5px;font-weight:600;color:var(--good)}
-.chex{margin:4px 0 0;font-size:13px;color:var(--muted);line-height:1.45}
+.chtra{margin:3px 0 0;font-size:13.5px;line-height:1.4;font-weight:600;color:var(--good)}
+.chex{margin:12px 0 0;font-size:13px;color:var(--muted);line-height:1.5}
 body.cheating{overflow:hidden}
 @media print{
   body.cheating>*{display:none!important}
@@ -1299,15 +1299,15 @@ function cheatFile(){
   out.push('h2{font-family:Georgia,"Times New Roman",serif;font-size:13pt;margin:20pt 0 4pt;page-break-after:avoid}');
   out.push('h2+.rule{width:44pt;height:1.4pt;background:#1F4E5F;margin:0 0 11pt}');
   out.push('.sub{color:#6E6A62;font-size:9.5pt;margin:0 0 18pt}');
-  out.push('.it{margin:0 0 8pt;padding:9pt 12pt 10pt;border:0.7pt solid #E2DDD2;border-radius:7pt;background:#FCFBF9;page-break-inside:avoid}');
-  out.push('.hd{margin:0 0 4pt;font-size:7.6pt;color:#6E6A62}');
-  out.push('.hd b{display:inline-block;background:#F2EFE8;border-radius:4pt;padding:1pt 5pt;color:#4a463f;margin-inline-end:5pt}');
-  out.push('.q{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:10.5pt;font-weight:700;line-height:1.35}');
-  out.push('.tr{margin:2pt 0 0;color:#6E6A62;font-size:9.2pt}');
-  out.push('.a{margin:7pt 0 0;font-weight:700;font-size:10pt;padding-inline-start:13pt;text-indent:-13pt}');
-  out.push('.a i{font-style:normal;color:#1F7A52;margin-inline-end:5pt}');
-  out.push('.at{margin:1pt 0 0;font-weight:700;color:#1F7A52;font-size:9.2pt;padding-inline-start:13pt}');
-  out.push('.ex{margin:7pt 0 0;font-size:8.8pt;color:#6E6A62}');
+  out.push('.it{margin:0 0 10pt;padding:12pt 14pt 14pt;border:0.7pt solid #E2DDD2;border-radius:8pt;background:#FCFBF9;page-break-inside:avoid}');
+  out.push('.hd{margin:0 0 10pt;font-size:8pt;color:#6E6A62}');
+  out.push('.hd b{display:inline-block;background:#F2EFE8;border-radius:5pt;padding:2pt 6pt;color:#4a463f;margin-inline-end:7pt}');
+  out.push('.q{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:10.5pt;font-weight:700;line-height:1.4}');
+  out.push('.tr{margin:4pt 0 0;color:#6E6A62;font-size:9.2pt;line-height:1.45}');
+  out.push('.a{margin:10pt 0 0;font-weight:700;font-size:10pt;padding-inline-start:15pt;text-indent:-15pt;line-height:1.4}');
+  out.push('.a i{font-style:normal;color:#1F7A52;margin-inline-end:6pt}');
+  out.push('.at{margin:3pt 0 0;font-weight:700;color:#1F7A52;font-size:9.2pt;padding-inline-start:15pt;line-height:1.4}');
+  out.push('.ex{margin:10pt 0 0;font-size:8.8pt;color:#6E6A62;line-height:1.5}');
   out.push('.pics{display:flex;gap:6pt;margin:7pt 0 0}');
   out.push('.pics figure{flex:1 1 0;margin:0;text-align:center}');
   out.push('.pics.one figure{flex:0 0 auto;max-width:165pt}');
@@ -1455,7 +1455,7 @@ function buildPdf(){
 
   var W = 595.28, H = 841.89;
   var ML = 46, MR = 46, MT = 50, MB = 46;
-  var PADX = 12, PADT = 9, PADB = 10, GAP = 8;
+  var PADX = 16, PADT = 13, PADB = 5, GAP = 11;
   var colw = W - ML - MR, txtw = colw - PADX * 2;
 
   var INK = '0.106 0.102 0.094 rg', MUTED = '0.431 0.416 0.384 rg', GOOD = '0.122 0.478 0.322 rg';
@@ -1510,9 +1510,9 @@ function buildPdf(){
       var tx = trOf(q, lang), ex = exOf(q, lang), tr = canTranslate();
       var tag = cheatTag(q), num = tf('q_num', { n: q.id });
       var rows = [];
-      rows.push({ k: 'head', num: num, tag: tag, h: 15 });
-      rows.push({ k: 'q', f: FSB, s: 10.5, c: INK, lines: wrapPdf(FSB, q.t, 10.5, txtw), lh: 13.6, gap: 6 });
-      if(tr && tx.t && tx.t !== q.t) rows.push({ k: 't', f: FR, s: 9.2, c: MUTED, lines: wrapPdf(FR, tx.t, 9.2, txtw), lh: 12, gap: 2 });
+      rows.push({ k: 'head', num: num, tag: tag, h: 26 });
+      rows.push({ k: 'q', f: FSB, s: 10.5, c: INK, lines: wrapPdf(FSB, q.t, 10.5, txtw), lh: 14.4, gap: 4 });
+      if(tr && tx.t && tx.t !== q.t) rows.push({ k: 't', f: FR, s: 9.2, c: MUTED, lines: wrapPdf(FR, tx.t, 9.2, txtw), lh: 12.8, gap: 4 });
       if(q.img && q.img.length){
         var pics = [];
         q.img.forEach(function(nm){ if(IMGJPG[nm]) pics.push({ nm: nm, m: IMGJPG[nm] }); });
@@ -1525,9 +1525,9 @@ function buildPdf(){
           rows.push({ k: 'img', cells: cells, label: multi, h: mh + (multi ? 11 : 0), gap: 8 });
         }
       }
-      rows.push({ k: 'a', f: FB, s: 10, c: INK, lines: wrapPdf(FB, q.o[q.c], 10, txtw - 13), lh: 13, gap: 7 });
-      if(tr && tx.o && tx.o[q.c] && tx.o[q.c] !== q.o[q.c]) rows.push({ k: 'at', f: FB, s: 9.2, c: GOOD, lines: wrapPdf(FB, tx.o[q.c], 9.2, txtw - 13), lh: 11.8, gap: 1 });
-      if(ex) rows.push({ k: 'e', f: FR, s: 8.8, c: MUTED, lines: wrapPdf(FR, ex, 8.8, txtw), lh: 11.8, gap: 7 });
+      rows.push({ k: 'a', f: FB, s: 10, c: INK, lines: wrapPdf(FB, q.o[q.c], 10, txtw - 15), lh: 13.6, gap: 11 });
+      if(tr && tx.o && tx.o[q.c] && tx.o[q.c] !== q.o[q.c]) rows.push({ k: 'at', f: FB, s: 9.2, c: GOOD, lines: wrapPdf(FB, tx.o[q.c], 9.2, txtw - 15), lh: 12.6, gap: 2 });
+      if(ex) rows.push({ k: 'e', f: FR, s: 8.8, c: MUTED, lines: wrapPdf(FR, ex, 8.8, txtw), lh: 12.4, gap: 11 });
 
       var inner = 0;
       rows.forEach(function(r){ inner += (r.gap || 0) + ((r.k === 'head' || r.k === 'img') ? r.h : r.lines.length * r.lh); });
@@ -1541,16 +1541,16 @@ function buildPdf(){
       rows.forEach(function(r){
         y -= (r.gap || 0);
         if(r.k === 'head'){
-          var pw = tw(FB, r.num, 7.6) + 11;
-          roundRect(ML + PADX, y - 2.5, ML + PADX + pw, y + 8.5, 5.5, '0.949 0.937 0.910 rg', null);
-          at(FB, r.num, 7.6, ML + PADX + 5.5, y, MUTED);
+          var pw = tw(FB, r.num, 8) + 15;
+          roundRect(ML + PADX, y - 4, ML + PADX + pw, y + 10, 7, '0.949 0.937 0.910 rg', null);
+          at(FB, r.num, 8, ML + PADX + 7.5, y, MUTED);
           if(r.tag){
-            var left = txtw - pw - 8;
-            var tagTxt = r.tag, tagS = 7.6;
+            var left = txtw - pw - 12;
+            var tagTxt = r.tag, tagS = 8;
             while(tw(FR, tagTxt, tagS) > left && tagTxt.length > 4) tagTxt = tagTxt.slice(0, -2);
-            at(FR, tagTxt, tagS, ML + PADX + pw + 7, y, MUTED);
+            at(FR, tagTxt, tagS, ML + PADX + pw + 10, y, MUTED);
           }
-          y -= r.h - 8;
+          y -= r.h - 10;   /* pill box ends 4pt below its baseline */
           return;
         }
         if(r.k === 'img'){
@@ -1571,15 +1571,15 @@ function buildPdf(){
           r.lines.forEach(function(l, i){
             if(!fits) room(r.lh + 4);
             if(i === 0){
-              at(FB, '✓', 10.2, ML + PADX, y, GOOD);
-              at(r.f, l, r.s, ML + PADX + 13, y, r.c);
-            } else at(r.f, l, r.s, ML + PADX + 13, y, r.c);
+              at(FB, '✓', 10.5, ML + PADX, y, GOOD);
+              at(r.f, l, r.s, ML + PADX + 15, y, r.c);
+            } else at(r.f, l, r.s, ML + PADX + 15, y, r.c);
             y -= r.lh;
           });
           return;
         }
         if(r.k === 'at'){
-          r.lines.forEach(function(l){ if(!fits) room(r.lh + 4); at(r.f, l, r.s, ML + PADX + 13, y, r.c); y -= r.lh; });
+          r.lines.forEach(function(l){ if(!fits) room(r.lh + 4); at(r.f, l, r.s, ML + PADX + 15, y, r.c); y -= r.lh; });
           return;
         }
         r.lines.forEach(function(l){ if(!fits) room(r.lh + 4); at(r.f, l, r.s, ML + PADX, y, r.c); y -= r.lh; });
